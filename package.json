@@ -1,0 +1,32 @@
+{
+    "name": "sa-components",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "main": "./dist/sa-components.umd.js",
+    "module": "./dist/sa-components.js",
+    "exports": {
+        ".": {
+            "import": "./dist/sa-components.esm.js",
+            "require": "./dist/sa-components.js"
+        }
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "author": "Serkan Algur <serkanalgur@gmail.com>",
+    "peerDdependencies": {
+        "vue": "^3.0.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "vite": "^5.2.0",
+        "vue": "^3.0.0"
+    }
+}
